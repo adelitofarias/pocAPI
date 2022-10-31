@@ -25,11 +25,9 @@ When ("retornara status 200", () => {
         expect(response.body.city.name).to.eq("João Pessoa");
         expect(response.body.city.id).to.eq(3397277);
         expect(response.body).to.have.property('city');
-        
+        expect(response.body.city.coord.lat).to.eq(-7.115);
+       
         expect(response.body.list[0].main.temp_max).to.be.an("number");
-   
-
-        expect(response.body.city.coord.lat).to.eq("-7.115");
    
         console.log(response);
     });
