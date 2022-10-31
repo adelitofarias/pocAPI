@@ -1,0 +1,138 @@
+[
+  {
+    "description": "    Como usuario, desejo consultar dados da API\n    Para conferir se os repametros estão corretos",
+    "elements": [
+      {
+        "description": "",
+        "id": "consultar-parametros;coletar-parametros-da-requisicao;;2",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Coletar parametros da requisicao",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Que os parametros da requisicao estejam coerentes",
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 8,
+            "name": "informo o \"Teste\"",
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "informo a \"30\"",
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 10,
+            "name": "todos os dados estiverem informados",
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 11,
+            "name": "a requisicao da API devera retornar 200",
+            "result": {
+              "duration": 888000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "consultar-parametros",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Consultar parametros",
+    "uri": "cypress\\e2e\\features\\api.feature"
+  },
+  {
+    "description": "    Como usuario, desejo consultar dados da API\n    Para conferir se os repametros de tempo estão corretos",
+    "elements": [
+      {
+        "description": "",
+        "id": "consultar-parametros-da-api-openweathermap;coletar-parametros-da-requisicao",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Coletar parametros da requisicao",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que tenha acesso a api",
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 8,
+            "name": "realizar a requisicao",
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 9,
+            "name": "retornara status 200",
+            "result": {
+              "duration": 1355000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "consultar-parametros-da-api-openweathermap",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Consultar parametros da API openWeatherMap",
+    "uri": "cypress\\e2e\\features\\get.feature"
+  }
+]
