@@ -1,4 +1,4 @@
-name: e2e
+name: api
 on: [push]
 jobs:
   build:
@@ -17,4 +17,4 @@ jobs:
     
     # action criada especialmente para o Cypress
     - name: Cypress run
-      uses: cypress-io/github-action@v2.8.2
+      uses: cypress-io/github-action@v4
