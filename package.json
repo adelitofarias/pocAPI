@@ -13,6 +13,7 @@
   "author": "cucumber",
   "license": "ISC",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^12.0.1"
+   "cypress": "^10.4.0",
+   "@badeball/cypress-cucumber-preprocessor": "^12.0.1"
   }
 }
