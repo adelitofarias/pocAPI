@@ -48,3 +48,9 @@ Thumbs.db
 *.mov
 *.wmv
 
+package-lock.json
+cucumber-report.html
+jsonlogs/log.json
+jsonlogs/messages.ndjson
+
+cypress/screenshots/

@@ -1,9 +1,7 @@
 const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const addCucumberPreprocessorPlugin =
-  require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
-const createEsbuildPlugin =
-  require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
+const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
+const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 
 //If using this approach, just call the key "setupNodeEvents" in the E2E configurations
 // async function setupNodeEvents(on, config) {
