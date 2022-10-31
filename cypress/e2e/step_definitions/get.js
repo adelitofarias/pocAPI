@@ -17,16 +17,19 @@ Then ("realizar a requisicao", () => {})
 When ("retornara status 200", () => {
     cy.request(opstions).then((response) => {
 
-        expect(response.duration,"a duracao do tempo de respota deve ser abaixo de 1500ms").to.be.below(1500);
+       expect(response.duration,"a duracao do tempo de respota deve ser abaixo de 1500ms").to.be.below(1500);
         expect(response.status).to.eq(200);
         expect(response.statusText).to.eq("OK");
 
         expect(response.body).to.be.not.null
         expect(response.body.city.name).to.eq("João Pessoa");
+        expect(response.body.city.id).to.eq(3397277);
         expect(response.body).to.have.property('city');
         
-        expect(response.body.list[0].main.temp_max, "Temperatura na cidade de João Pessoa").to.eq(24.76);
         expect(response.body.list[0].main.temp_max).to.be.an("number");
+   
+
+        expect(response.body.city.coord.lat).to.eq("-7.115");
    
         console.log(response);
     });
