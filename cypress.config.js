@@ -29,5 +29,10 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/e2e/features/*.feature",
     chromeWebSecurity: false,
+    env: {
+      API_URL: 'https://api.openweathermap.org/data/2.5/forecast?',
+      APPID: "aa8da36c131ecd59e8fd066c5900102a",
+      ID: "3397277"
+    }
   },
 });
