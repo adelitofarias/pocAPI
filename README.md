@@ -3,7 +3,20 @@
 > Esse é um exemplo de como montar uma estrutura inicial de testes automáticos de API com o auxílio do [Cypress.io][cy] e do [cypress-cucumber-preprocessor][cucumber] que dá suporte para a escrita dos cenários com as regras gramaticais do Gherkin e 
 com o auxílio do [`cypress-plugin-api`](https://github.com/filiphric/cypress-plugin-api) para visualização das respostas.
 
-## Pre-requirements
+### ✨ Pré-requisitos
+-----------------------
+- A IDE escolhida foi o [VS Code][vs];
+- Instale o [Node.js](https://nodejs.org/en/download/);
+- Seguindo as instruções da documentação do [Cypress.io][cyDOC], do [cypress-cucumber-preprocessor][cucumber] e do [`cypress-plugin-api`](https://github.com/filiphric/cypress-plugin-api) os instale;
+- Baixe este repositório ou faça um git clone;
+- Abra o diretório do projeto e execute o comando:
+    - `npm install`
+- Para acionar os testes, execute no diretório do projeto:
+    - `npm run run`
+- Pronto, o projeto será executado em sua máquina.
+
+
+
 
 It is required to have Node.js and npm installed to run this project.
 
