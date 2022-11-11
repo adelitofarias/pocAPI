@@ -8,12 +8,12 @@ com o auxílio do [`cypress-plugin-api`](https://github.com/filiphric/cypress-pl
 
 ### ✨ Pré-requisitos
 -----------------------
-- A IDE escolhida foi o [VS Code][vs];
-- Instale o [Node.js](https://nodejs.org/en/download/);
+- A IDE escolhida foi o [`VS Code`](https://code.visualstudio.com/download);
+- Instale o [`Node.js`](https://nodejs.org/en/download/);
 - Seguindo as instruções da documentação do [`Cypress.io`](https://github.com/cypress-io/cypress), do [`cypress-cucumber-preprocessor`](https://github.com/badeball/cypress-cucumber-preprocessor) e do [`cypress-plugin-api`](https://github.com/filiphric/cypress-plugin-api) os instale;
 - Baixe este repositório ou faça um git clone;
 - Abra o diretório do projeto e execute o comando:
     - `npm install`
 - Para acionar os testes, execute no diretório do projeto:
     - `npm run run`
-- Pronto, o projeto será executado em sua máquina.
+- Pronto, o projeto será executado em sua máquina.😄
