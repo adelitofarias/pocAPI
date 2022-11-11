@@ -3,7 +3,7 @@
 > Esse é um exemplo de como montar uma estrutura inicial de testes automáticos de API com o auxílio do [`Cypress.io`](https://github.com/cypress-io/cypress) e do [`cypress-cucumber-preprocessor`](https://github.com/badeball/cypress-cucumber-preprocessor) que dá suporte para a escrita dos cenários com as regras gramaticais do Gherkin e 
 com o auxílio do [`cypress-plugin-api`](https://github.com/filiphric/cypress-plugin-api) para visualização das respostas.
 
-![2022-11-10-23-46-09](https://user-images.githubusercontent.com/19351435/201252530-4bdfd988-a8af-41b0-9e89-8d560a326218.gif)
+![2022-11-10-23-55-52](https://user-images.githubusercontent.com/19351435/201253126-e3ec099a-dd7d-46f3-86d8-ae08830778e4.gif)
 
 
 
