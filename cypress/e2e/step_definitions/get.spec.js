@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import assertions from '../../support/api/assertions';
-import request from '../../support/api/requests'
+import assertions from '../assertions/assertions';
+import request from '../requests/requests'
 import {Given, Then, When} from "@badeball/cypress-cucumber-preprocessor"
 
 Given ("que tenha acesso a api", () => {})
