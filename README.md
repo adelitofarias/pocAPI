@@ -17,3 +17,33 @@ com o auxílio do [`cypress-plugin-api`](https://github.com/filiphric/cypress-pl
 - Para acionar os testes, execute no diretório do projeto:
     - `npm run run`
 - Pronto, o projeto será executado em sua máquina.😄
+
+### ⚙️ Arquitetura do projeto
+-----------------------
+
+```
+  ├─  cypress/
+  │        │
+  │        ├── e2e/
+  │        │   ├── assertions
+  │        │       └── assertions.js
+  │        │   ├── features
+  │        │       └── get.features
+  │        │   ├── requests
+  │        │       └── requests.js
+  │        │   ├── step_definitions
+  │        │       └── get.spec.js
+  │        ├── support/
+  │        │   └── commands.js
+  │        │   └── e2e.js
+  ├── cypress.config.json
+  ├── package.json
+  └── README.md
+```
+---------------------------------------
+## 🔍 Camadas da arquitetura
+
+ - **assertions:** estratégia para executar as assertivas dos parametros retornados pela requisição;
+ - **features:** arquivos contendo as definições de BDD em extensão *.feature;
+ - **requests:** estratégia apra realização de requisições;
+ - **step_definitions:** contém a junção entre a definição do BDD as chamdas dos requests e assertions para efetivação da validação
