@@ -5,7 +5,7 @@ const APPID = Cypress.env('APPID')
 class Requests {
 
     getOpenWeatherAPI() {
-        return cy.api({
+        return cy.request({
             method: 'GET',
             url:  `${API_URL}id=${ID}&appid=${APPID}&units=metric`,
             headers: {

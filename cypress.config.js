@@ -16,6 +16,7 @@ const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esb
 // }
 
 module.exports = defineConfig({
+
   e2e: {
     async setupNodeEvents(on, config) {
       const bundler = createBundler({
@@ -28,6 +29,12 @@ module.exports = defineConfig({
       return config;
     },
     specPattern: "cypress/e2e/features/*.feature",
-    chromeWebSecurity: false
+
+    chromeWebSecurity: false,
+
+    env: {
+      requestMode: true
+    }
   },
+
 });

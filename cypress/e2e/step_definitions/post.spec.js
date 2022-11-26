@@ -31,7 +31,7 @@ Then ("todos os dados estiverem informados", () => {
 })
 
 When ("a requisicao da API devera retornar 200", () => {
-    cy.api(opstions).then((response) => {
+    cy.request(opstions).then((response) => {
         expect(response.status).to.eq(200);
         expect(response.statusText).to.eq("OK");
         console.log(response);
