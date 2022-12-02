@@ -34,6 +34,7 @@ When ("a requisicao da API devera retornar 200", () => {
     cy.request(opstions).then((response) => {
         expect(response.status).to.eq(200);
         expect(response.statusText).to.eq("OK");
+        expect(response.body.data).to.eq("{\"dados\":{\"name\":\"Teste\",\"age\":\"30\"}}")
         console.log(response);
     });
      

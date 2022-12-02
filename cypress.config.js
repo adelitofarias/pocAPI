@@ -34,7 +34,8 @@ module.exports = defineConfig({
 
     env: {
       requestMode: true
-    }
+    },
+    experimentalRunAllSpecs: true
   },
 
 });
