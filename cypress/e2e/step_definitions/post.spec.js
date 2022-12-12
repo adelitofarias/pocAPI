@@ -1,15 +1,8 @@
 /// <reference types="cypress" />
 
-import {Given, Then, When, And} from "@badeball/cypress-cucumber-preprocessor"
-
-const opstions = {
-    method: 'POST',
-        url: 'https://httpbin.org/post',
-        body: null,
-        headers: {
-            'content-type': 'aplication/json'
-        }
-};
+import assertionsPOST from '../assertions/assertionsPOST';
+import requestPOST from '../requests/requestsPOST'
+import {Given, Then, When,And} from "@badeball/cypress-cucumber-preprocessor"
 
 const dados = {
    name: '',
@@ -27,15 +20,20 @@ And ("informo a {string}", (idade)=> {
 })
 
 Then ("todos os dados estiverem informados", () => {
-    opstions.body = {dados}
+    if (dados.age === null || dados.name=== null) {
+        console.log("variable is null");
+    }
 })
 
 When ("a requisicao da API devera retornar 200", () => {
-    cy.request(opstions).then((response) => {
-        expect(response.status).to.eq(200);
-        expect(response.statusText).to.eq("OK");
-        expect(response.body.data).to.eq("{\"dados\":{\"name\":\"Teste\",\"age\":\"30\"}}")
-        console.log(response);
-    });
+
+    requestPOST.postCadastroNomeIdade(dados).then(getDataResponse => {
+        assertionsPOST.notNull(getDataResponse)
+        assertionsPOST.deveConterStatus(getDataResponse, 200)
+        assertionsPOST.deveConterDuracao(getDataResponse, 1500)
+        assertionsPOST.deveConterStatusText(getDataResponse,"OK")
+        assertionsPOST.deveConterNome(getDataResponse,"Teste")
+        
+    })
      
 })

@@ -1,4 +1,4 @@
-class Assertions {
+class AssertionsGET {
 
     notNull(response){
         expect(response).to.be.not.null
@@ -38,4 +38,4 @@ class Assertions {
     
 }
 
-export default new Assertions()
+export default new AssertionsGET()

@@ -2,7 +2,7 @@ const API_URL = Cypress.env('API_URL')
 const ID = Cypress.env('ID')
 const APPID = Cypress.env('APPID')
 
-class Requests {
+class RequestsGET {
 
     getOpenWeatherAPI() {
         return cy.request({
@@ -16,4 +16,4 @@ class Requests {
  
 }
 
-export default new Requests()
+export default new RequestsGET()

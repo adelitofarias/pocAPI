@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import assertions from '../assertions/assertions';
-import request from '../requests/requests'
+import assertionsGET from '../assertions/assertionsGET';
+import requestGET from '../requests/requestsGET'
 import {Given, Then, When} from "@badeball/cypress-cucumber-preprocessor"
 
 Given ("que tenha acesso a api", () => {})
@@ -10,16 +10,16 @@ Then ("realizar a requisicao", () => {})
 
 When ("retornara todos os parametros de tempo para a cidade", () => {
 
-    request.getOpenWeatherAPI().then(getDataResponse => {
-        assertions.notNull(getDataResponse)
-        assertions.deveConterStatus(getDataResponse, 200)
-        assertions.deveConterDuracao(getDataResponse, 1500)
-        assertions.deveConterStatusText(getDataResponse,"OK")
-        assertions.deveConterCidade(getDataResponse,3397277)
-        assertions.deveConterCidadeName(getDataResponse,"João Pessoa")
-        assertions.deveConterCidadeCoordLat(getDataResponse,-7.115)
-        assertions.deveConterElementoCidade(getDataResponse,'city')
-        assertions.deveConterPropriedadeMaxTemp(getDataResponse,"number")
+    requestGET.getOpenWeatherAPI().then(getDataResponse => {
+        assertionsGET.notNull(getDataResponse)
+        assertionsGET.deveConterStatus(getDataResponse, 200)
+        assertionsGET.deveConterDuracao(getDataResponse, 1500)
+        assertionsGET.deveConterStatusText(getDataResponse,"OK")
+        assertionsGET.deveConterCidade(getDataResponse,3397277)
+        assertionsGET.deveConterCidadeName(getDataResponse,"João Pessoa")
+        assertionsGET.deveConterCidadeCoordLat(getDataResponse,-7.115)
+        assertionsGET.deveConterElementoCidade(getDataResponse,'city')
+        assertionsGET.deveConterPropriedadeMaxTemp(getDataResponse,"number")
     })
      
 })
