@@ -16,15 +16,10 @@ class AssertionsPOST {
         expect(response.statusText, `o statusText eh de ${statusText}`).to.eq(statusText)
     }
 
-
-
     deveConterNome(response, nome) {
         expect(response.body.data, `o nome cadastrado eh ${nome}`).to.contain(nome)
     }
 
-    
-
-    
 }
 
 export default new AssertionsPOST()
