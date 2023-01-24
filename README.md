@@ -7,6 +7,7 @@ com o auxílio do [`cypress-plugin-api`](https://github.com/filiphric/cypress-pl
 
 ![POST](https://user-images.githubusercontent.com/19351435/202854318-6f4a4e74-6761-47b4-959b-c2f2a7ad16ba.gif)
 
+![report](https://user-images.githubusercontent.com/19351435/214204999-823fb210-1bb7-4165-8b29-bd337c571b5a.gif)
 
 
 ### ✨ Pré-requisitos
