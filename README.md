@@ -19,9 +19,7 @@ com o auxílio do [`cypress-plugin-api`](https://github.com/filiphric/cypress-pl
     - `npm install`
 - Para acionar os testes em modo headless e cosntruir o relatório em ambiente Windowns, insira o arquivo `cucumber-json-formatter.exe` e execute no diretório do projeto:
     - `npm run run`
-
-Para maiores detalhes, consutar: [`json-formatter`](https://github.com/cucumber/json-formatter) 
-
+    - Para maiores detalhes, consutar: [`json-formatter`](https://github.com/cucumber/json-formatter) 
 - Pronto, o projeto será executado em sua máquina e construirá o relatório. 😄
 
 ### ⚙️ Arquitetura do projeto
