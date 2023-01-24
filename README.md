@@ -17,9 +17,12 @@ com o auxílio do [`cypress-plugin-api`](https://github.com/filiphric/cypress-pl
 - Baixe este repositório ou faça um git clone;
 - Abra o diretório do projeto e execute o comando:
     - `npm install`
-- Para acionar os testes, execute no diretório do projeto:
+- Para acionar os testes em modo headless e cosntruir o relatório em ambiente Windowns, insira o arquivo `cucumber-json-formatter.exe` e execute no diretório do projeto:
     - `npm run run`
-- Pronto, o projeto será executado em sua máquina.😄
+
+Para maiores detalhes, consutar: [`json-formatter`](https://github.com/cucumber/json-formatter) 
+
+- Pronto, o projeto será executado em sua máquina e construirá o relatório. 😄
 
 ### ⚙️ Arquitetura do projeto
 -----------------------
